@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AWPreviewCVCell" id="iQV-L3-p6R" customClass="AWPreviewCVCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pah-Br-DX6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                    </imageView>
+                    <pageControl opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="R94-fp-sJf">
+                        <rect key="frame" x="0.0" y="218" width="320" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="IV8-j1-ZIO"/>
+                        </constraints>
+                    </pageControl>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="R94-fp-sJf" firstAttribute="centerX" secondItem="iQV-L3-p6R" secondAttribute="centerX" id="TDU-Yf-BdW"/>
+                <constraint firstItem="pah-Br-DX6" firstAttribute="height" secondItem="iQV-L3-p6R" secondAttribute="height" id="WQ0-2D-JRM"/>
+                <constraint firstItem="pah-Br-DX6" firstAttribute="width" secondItem="iQV-L3-p6R" secondAttribute="width" id="beQ-8f-yM3"/>
+                <constraint firstItem="pah-Br-DX6" firstAttribute="centerX" secondItem="iQV-L3-p6R" secondAttribute="centerX" id="bmH-Mh-Vik"/>
+                <constraint firstItem="pah-Br-DX6" firstAttribute="centerY" secondItem="iQV-L3-p6R" secondAttribute="centerY" id="tWC-y9-hmI"/>
+                <constraint firstItem="R94-fp-sJf" firstAttribute="width" secondItem="iQV-L3-p6R" secondAttribute="width" id="wYI-us-37K"/>
+                <constraint firstAttribute="bottom" secondItem="R94-fp-sJf" secondAttribute="bottom" constant="25" id="zke-be-K5W"/>
+            </constraints>
+            <connections>
+                <outlet property="imgView" destination="pah-Br-DX6" id="E8R-Og-SV4"/>
+                <outlet property="pageControlObj" destination="R94-fp-sJf" id="xU8-qU-AGK"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

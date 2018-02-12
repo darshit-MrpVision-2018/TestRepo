@@ -1,0 +1,32 @@
+//
+//  Awzaw.pch
+//  Awzaw
+//
+//  Created by Darshit Vora on 14/10/17.
+//  Copyright © 2017 MrpVision. All rights reserved.
+//
+
+#ifndef Awzaw_pch
+#define Awzaw_pch
+
+#define APP_DEL [[UIApplication sharedApplication] delegate]
+#define SPINNER MRPSpinner
+
+
+#import <UIKit/UIKit.h>
+#import "UIAlertController+Utils.h"
+#import "UIViewController+NetworkConnection.h"
+#import "UIViewController+ActivityIndicator.h"
+#import "UIViewController+Utils.h"
+#import "UIViewController+CustomNavigation.h"
+#import "NSString+String.h"
+#import "GlobalTitleMessages.h"
+#import "UIFont+Utils.h"
+#import "UITextField+TextField.h"
+#import <AFHTTPSessionManager.h>
+#import "AWGlobalAPI.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Awzaw_pch */

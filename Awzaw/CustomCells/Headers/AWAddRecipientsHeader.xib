@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="233"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone_icon" translatesAutoresizingMaskIntoConstraints="NO" id="GzC-TE-ar9">
+                    <rect key="frame" x="157" y="0.0" width="60" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="GmL-aG-LN2"/>
+                        <constraint firstAttribute="height" constant="75" id="d7t-DE-N5X"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN WITH PHONE NUMBER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nb-kJ-c1M">
+                    <rect key="frame" x="103.5" y="105" width="168" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="168" id="fow-Yo-WMb"/>
+                        <constraint firstAttribute="height" constant="67" id="pee-kM-RPP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the following details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQx-Nq-alk" userLabel="lblinfo">
+                    <rect key="frame" x="0.5" y="192" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="jPt-VI-r4d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="18"/>
+                    <color key="textColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1nb-kJ-c1M" firstAttribute="top" secondItem="GzC-TE-ar9" secondAttribute="bottom" constant="30" id="4Vt-S5-XYc"/>
+                <constraint firstItem="wQx-Nq-alk" firstAttribute="top" secondItem="1nb-kJ-c1M" secondAttribute="bottom" constant="20" id="BoL-ka-OkP"/>
+                <constraint firstItem="wQx-Nq-alk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Kup-F7-G0S"/>
+                <constraint firstItem="GzC-TE-ar9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PJL-lM-oqZ"/>
+                <constraint firstItem="1nb-kJ-c1M" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Zqs-MR-Qwu"/>
+                <constraint firstItem="GzC-TE-ar9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wak-4F-4IY"/>
+                <constraint firstItem="wQx-Nq-alk" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="xF4-wQ-JJs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="15.5" y="-70.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="phone_icon" width="34" height="34"/>
+    </resources>
+</document>
